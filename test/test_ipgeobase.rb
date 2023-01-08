@@ -8,7 +8,7 @@ class TestIpgeobase < Minitest::Test
     refute_nil ::Ipgeobase::VERSION
   end
 
-  def test_valid_ip
+  def test_valid_ip # rubocop:disable Metrics/MethodLength
     response_body = <<~XML
       <query>
         <country>Australia</country>
