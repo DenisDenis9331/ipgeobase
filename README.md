@@ -4,6 +4,8 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 TODO: Delete this and the text above, and describe your gem
 
+[![build, lint, test](https://github.com/denis1011101/ipgeobase/actions/workflows/main.yml/badge.svg)](https://github.com/denis1011101/ipgeobase/actions/workflows/main.yml)
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
