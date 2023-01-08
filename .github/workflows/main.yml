@@ -6,6 +6,8 @@ on:
       - master
 
   pull_request:
+    - branches:
+        - master
 
 jobs:
   build:
@@ -14,7 +16,7 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - '3.1.3'
+          - '2.7.0'
 
     steps:
     - uses: actions/checkout@v3
@@ -23,5 +25,9 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-    - name: Run the default task
-      run: bundle exec rake
+    - name: Install dependencies
+      run: bundle install
+    - name: Run Rubocop
+      run: bundle exec rubocop
+    - name: Run minitest
+      run: bundle exec rake test
