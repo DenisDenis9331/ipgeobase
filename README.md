@@ -17,12 +17,14 @@ If bundler is not being used to manage dependencies, install the gem by executin
 ## Usage
 
 example usage:
+```ruby
 ip_meta = Ipgeobase.lookup('8.8.8.8')
 puts ip_meta.city
 puts ip_meta.country
 puts ip_meta.countryCode
 puts ip_meta.lat
 puts ip_meta.lon
+```
 
 ## Development
 
