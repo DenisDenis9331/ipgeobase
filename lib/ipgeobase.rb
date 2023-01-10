@@ -29,11 +29,3 @@ module Ipgeobase
     end
   end
 end
-
-# example usage:
-# ip_meta = Ipgeobase.lookup('123.456.789.012')
-# puts ip_meta.city
-# puts ip_meta.country
-# puts ip_meta.countryCode
-# puts ip_meta.lat
-# puts ip_meta.lon
